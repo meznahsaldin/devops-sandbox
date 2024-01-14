@@ -1,4 +1,6 @@
 # devops-sandbox
+[![Sandbox](https://github.com/meznahsaldin/devops-sandbox/actions/workflows/sandbox.yml/badge.svg)](https://github.com/meznahsaldin/devops-sandbox/actions/workflows/sandbox.yml)
+
 
 ## Notes
 
