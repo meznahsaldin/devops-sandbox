@@ -3,16 +3,19 @@ name: Sandbox
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  build:
+  # Check out the repository
+  checkout: 
     runs-on: ubuntu-latest
-
     steps:
-    # Check out the repository
     - uses: actions/checkout@v3
 
-    # Execute a command on the runner 
+  # Execute a command on the runner 
+  echo:
+    runs-on: ubuntu-latest
+    steps:
     - name: Run a multi-line script
       run: |
-        echo "running the script" > status.txt
+        echo "the script was ran" > status.txt
         cat status.txt
-
+    - name: Echo something 
+      run: echo "time to wrap up"
